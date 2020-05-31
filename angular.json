@@ -24,9 +24,15 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+               "src/assets/css/font-awesome.min.css",
+               "src/assets/css/owl.carousel.css",
+               "src/assets/css/style.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/owl.carousel.js",
+              "src/assets/js/skycons.js"
+            ]
           },
           "configurations": {
             "production": {

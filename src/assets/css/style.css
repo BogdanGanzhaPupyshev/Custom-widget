@@ -30,7 +30,7 @@ img{max-width:100%;}
 html, body{
     font-size: 100%;
 	font-family: 'PT Sans Narrow', sans-serif;
-    background:url(../images/banner.jpg) no-repeat 0px 0px;
+    background:url(src/assets/images/banner.jpg) no-repeat 0px 0px;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -121,7 +121,7 @@ input[type="submit"],.btn-primary,.agileits_copyright p a,.w3l_search_bottom ul.
 	outline: none;
     padding: 0;
     width: 8%;
-    background: url(../images/search.png) no-repeat 2px -1px;
+    background: url(src/assets/images/search.png) no-repeat 2px -1px;
     height: 18px;
     border: none;
     cursor: pointer;
@@ -182,7 +182,7 @@ input[type="submit"],.btn-primary,.agileits_copyright p a,.w3l_search_bottom ul.
     padding:1.4em 0;
 }
 .agileits_w3layouts_main_grid_right{
-	background:url(../images/1.jpg) no-repeat 0px 0px;
+	background:url(src/assets/images/1.jpg) no-repeat 0px 0px;
 	background-size:cover;
 	-webkit-background-size:cover;
 	-ms-background-size:cover;
