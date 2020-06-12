@@ -61,8 +61,8 @@ export class WeatherWidgetApiComponent implements OnInit {
   }
   
    getInputValue(id:string):string {
-    var input_val = document.getElementById(id).value;
-    return input_val;
+    var inputValue = (<HTMLInputElement>document.getElementById(id)).value;
+    return inputValue;
   }
 
 }
