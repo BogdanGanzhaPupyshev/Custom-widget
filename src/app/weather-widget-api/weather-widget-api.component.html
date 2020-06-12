@@ -1,0 +1,28 @@
+
+<div class="searchArea">
+  <input id="inputCity"  type="text" value="Kiev" ><br>
+  <button id="searchButton" (click)="this.getWeatherDataSearch(getInputValue('inputCity'))">Search!</button>
+</div>
+<div class="container">
+    <div class="widget">
+      <div class="details">
+        <div class="temperature">{{WeatherData.temp_celcius}}°</div>
+        <div class="summary">
+          <p class="summaryText">{{WeatherData.name}}</p>
+          <p class="summaryText">{{mainDescription}}</p>   
+        </div>
+        <div class="precipitation">Humidity: {{WeatherData.main.humidity}}%</div>
+        <div class="wind">Wind: {{windSpeed}}</div>
+      </div>
+      <div class="pictoBackdrop"></div>
+      <div class="pictoFrame">
+           <img [src] = "iconUrl" style="height: 100px;width: 100px; margin: 120px;">
+        </div>
+      <!-- <div class="pictoCloudBig"></div>
+      <div class="pictoCloudFill"></div>
+      <div class="pictoCloudSmall"></div> -->
+      <!-- <div class="iconCloudBig"></div>
+      <div class="iconCloudFill"></div>
+      <div class="iconCloudSmall"></div> -->
+    </div>
+  </div>

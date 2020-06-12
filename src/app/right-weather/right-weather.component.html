@@ -1,131 +1,132 @@
 <head>
 	<!-- js -->
-	<script src="src/assers/js/jquery-2.2.3.min.js"></script> 
-	<!-- //js --> 
+	<script src="src/assers/js/jquery-2.2.3.min.js"></script>
+	<!-- //js -->
 	<!-- font-awesome icons -->
 	<link rel="stylesheet" href="/css/font-awesome.min.css" />
 	<!-- //font-awesome icons -->
 	<link href="/css/owl.carousel.css" rel="stylesheet" type="text/css" media="all">
 	<link href="/css/style.css" rel="stylesheet" type="text/css" media="all" />
-	<link href="//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
-	</head>
-			<div class="w3layouts_main_grid_right">
-				<div class="agileits_w3layouts_main_grid_right">
-					<div class="w3_agile_main_grid_left">
-						<h2>Brazil</h2>
-						<p><i class="fa fa-clock-o" aria-hidden="true"></i> 11:00 AM</p>
-					</div>
-					<div class="w3_agile_main_grid_right">
-						<ul class="w3layouts_weather_updates">
-							<li>
-								<canvas id="clear-day" width="25" height="25"></canvas>
-								25°<span>Monday<i><label class="fa fa-clock-o" aria-hidden="true"></label> 11:00 AM</i></span>
-							</li>
-							<li>
-								<canvas id="sleet" width="25" height="25"></canvas>
-								5°<span>Tuesday<i><label class="fa fa-clock-o" aria-hidden="true"></label> 12:00 PM</i></span>
-							</li>
-							<li>
-								<canvas id="partly-cloudy-day" width="25" height="25"></canvas>
-								25°<span>Wednesday<i><label class="fa fa-clock-o" aria-hidden="true"></label> 9:00 AM</i></span>
-							</li>
-							<li>
-								<canvas id="partly-cloudy-night" width="25" height="25"> </canvas>
-								15°<span>Thursday<i><label class="fa fa-clock-o" aria-hidden="true"></label> 4:00 PM</i></span>
-							</li>
-						</ul>
-					</div>
-					<div class="clear"> </div>
-				</div>
-				<div class="w3_agile_main_grid_right1">
-					<div id="owl-demo" class="owl-carousel"> 
-						<div class="item">
-							<div class="w3_weather_scroll">
-								<h4>10:00 AM</h4>
-								<h5>27°</h5>
-								<canvas id="clear-night" width="30" height="30"></canvas>
-							</div>
-						</div>
-						<div class="item">
-							<div class="w3_weather_scroll">
-								<h4>11:00 AM</h4>
-								<h5>15°</h5>
-								<canvas id="cloudy" width="30" height="30"></canvas>
-							</div>
-						</div>
-						<div class="item">
-							<div class="w3_weather_scroll">
-								<h4>3:00 PM</h4>
-								<h5>-5°</h5>
-								<canvas id="rain" width="30" height="30"></canvas>
-							</div>
-						</div>
-						<div class="item">
-							<div class="w3_weather_scroll">
-								<h4>5:00 PM</h4>
-								<h5>35°</h5>
-								<canvas id="wind" width="30" height="30"></canvas>
-							</div>
-						</div>
-						<div class="item">
-							<div class="w3_weather_scroll">
-								<h4>8:00 PM</h4>
-								<h5>5°</h5>
-								<canvas id="snow" width="30" height="30"></canvas>
-							</div>
-						</div>
-						<div class="item">
-							<div class="w3_weather_scroll">
-								<h4>10:00 PM</h4>
-								<h5>18°</h5>
-								<canvas id="fog" width="25" height="25"></canvas>
-							</div>
-						</div>
-					</div>
+	<link href="//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=cyrillic,cyrillic-ext,latin-ext"
+		rel="stylesheet">
+<!--skycons-icons-->
+    <script src="src/assets/js/skycons.js"></script>
+<!--//skycons-icons-->
+</head>
+<div class="w3layouts_main_grid_right">
+	<div class="agileits_w3layouts_main_grid_right">
+		<div class="w3_agile_main_grid_left">
+			<h2>Brazil</h2>
+			<p><i class="fa fa-clock-o" aria-hidden="true"></i> 11:00 AM</p>
+		</div>
+		<div class="w3_agile_main_grid_right">
+			<ul class="w3layouts_weather_updates">
+				<li>
+					<canvas id="clear-day" width="25" height="25"></canvas>
+					25°<span>Monday<i><label class="fa fa-clock-o" aria-hidden="true"></label> 11:00 AM</i></span>
+				</li>
+				<li>
+					<canvas id="sleet" width="25" height="25"></canvas>
+					5°<span>Tuesday<i><label class="fa fa-clock-o" aria-hidden="true"></label> 12:00 PM</i></span>
+				</li>
+				<li>
+					<canvas id="partly-cloudy-day" width="25" height="25"></canvas>
+					25°<span>Wednesday<i><label class="fa fa-clock-o" aria-hidden="true"></label> 9:00 AM</i></span>
+				</li>
+				<li>
+					<canvas id="partly-cloudy-night" width="25" height="25"> </canvas>
+					15°<span>Thursday<i><label class="fa fa-clock-o" aria-hidden="true"></label> 4:00 PM</i></span>
+				</li>
+			</ul>
+		</div>
+		<div class="clear"> </div>
+	</div>
+	<div class="w3_agile_main_grid_right1">
+		<div id="owl-demo" class="owl-carousel">
+			<div class="item">
+				<div class="w3_weather_scroll">
+					<h4>10:00 AM</h4>
+					<h5>27°</h5>
+					<canvas id="clear-night" width="30" height="30"></canvas>
 				</div>
 			</div>
-			
-		<script src="src/assets/js/owl.carousel.js"></script>  
-		<script>
-			$(document).ready(function() { 
-				$("#owl-demo").owlCarousel({
-			 
-				  autoPlay: 3000, //Set AutoPlay to 3 seconds
-			 
-				  items :5,
-				  itemsDesktop : [640,5],
-				  itemsDesktopSmall : [414,2],
-				  navigation : true
-			 
-				});
-				
-			}); 
-		</script>
-		<!--skycons-icons-->
-			<script src="src/assets/js/skycons.js"></script>
-		<!--//skycons-icons-->
-		<script>
-			 var icons = new Skycons({"color": "#fff"}),
-				  list  = [
-					"clear-night","wind","rain","cloudy", "snow","fog"
-				  ],
-				  i;
+			<div class="item">
+				<div class="w3_weather_scroll">
+					<h4>11:00 AM</h4>
+					<h5>15°</h5>
+					<canvas id="cloudy" width="30" height="30"></canvas>
+				</div>
+			</div>
+			<div class="item">
+				<div class="w3_weather_scroll">
+					<h4>3:00 PM</h4>
+					<h5>-5°</h5>
+					<canvas id="rain" width="30" height="30"></canvas>
+				</div>
+			</div>
+			<div class="item">
+				<div class="w3_weather_scroll">
+					<h4>5:00 PM</h4>
+					<h5>35°</h5>
+					<canvas id="wind" width="30" height="30"></canvas>
+				</div>
+			</div>
+			<div class="item">
+				<div class="w3_weather_scroll">
+					<h4>8:00 PM</h4>
+					<h5>5°</h5>
+					<canvas id="snow" width="30" height="30"></canvas>
+				</div>
+			</div>
+			<div class="item">
+				<div class="w3_weather_scroll">
+					<h4>10:00 PM</h4>
+					<h5>18°</h5>
+					<canvas id="fog" width="25" height="25"></canvas>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
-			  for(i = list.length; i--; )
-				icons.set(list[i], list[i]);
+<script src="src/assets/js/owl.carousel.js"></script>
+<script>
+	$(document).ready(function () {
+		$("#owl-demo").owlCarousel({
 
-			  icons.play();
-		</script>
-		<script>
-			 var icons = new Skycons({"color": "#FFD700"}),
-				  list  = [
-					"partly-cloudy-day",
-					"partly-cloudy-night","clear-day","sleet"
-				  ],
-				  i;
+			autoPlay: 3000, //Set AutoPlay to 3 seconds
 
-			  for(i = list.length; i--; )
-				icons.set(list[i], list[i]);
+			items: 5,
+			itemsDesktop: [640, 5],
+			itemsDesktopSmall: [414, 2],
+			navigation: true
 
-			  icons.play();
-		</script>
+		});
+
+	}); 
+</script>
+<script>
+	var icons = new Skycons({ "color": "#fff" }),
+		list = [
+			"clear-night", "wind", "rain", "cloudy", "snow", "fog"
+		],
+		i;
+
+	for (i = list.length; i--;)
+		icons.set(list[i], list[i]);
+
+	icons.play();
+</script>
+<script>
+	var icons = new Skycons({ "color": "#FFD700" }),
+		list = [
+			"partly-cloudy-day",
+			"partly-cloudy-night", "clear-day", "sleet"
+		],
+		i;
+
+	for (i = list.length; i--;)
+		icons.set(list[i], list[i]);
+
+	icons.play();
+</script>
